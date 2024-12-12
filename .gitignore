@@ -1,0 +1,34 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+!**/Dockerfile
+!**/Makefile
+
+# Unignore all dirs
+!*/
+!api
+
+# ignore
+**/.idea
+**/.vscode
+**/.DS_Store
+**/logs
+**/adhoc
+**/coverage.txt
+
+# for test purpose
+go.work
+go.work.sum
+
+# gitlab ci
+.cache
+.golangci.yml
+
+#为了确保所有文本文件都被标准化为 LF 换行符
+* text=auto eol=lf
+
+# vim auto backup file
+*~
+!OWNERS
